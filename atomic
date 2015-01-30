@@ -1,0 +1,19 @@
+/********************************************************************
+	created:		2011/02/13
+	filename: 		atomic
+	author:			Tigran Avanesov
+	description:	C++0x atomics implementation
+*********************************************************************/
+
+#ifndef ATOMIC_INCLUDED
+#define ATOMIC_INCLUDED
+
+#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+# pragma once
+#endif
+
+#include "atomic_impl/atomic.hpp"
+#include "atomic_impl/atomic_flag.hpp"
+#include "atomic_impl/atomic_free_functions.hpp"
+
+#endif // ATOMIC_INCLUDED
